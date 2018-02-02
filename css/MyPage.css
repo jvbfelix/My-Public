@@ -1,0 +1,161 @@
+.navbar{
+    border-radius: 0px;
+    box-shadow: 2px 2px  10px red;
+    display: flex;
+    height: 8%;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background-color: #111111;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.navbar:hover{
+    box-shadow: 2px 2px  10px blue;
+}
+a{
+    text-decoration: none;
+}
+.itens{
+    display: flex;
+}
+.itens > li{
+    list-style-type: none;
+    height: 100%;
+    margin-right: 1vw;
+}
+
+.ico{
+    font-size: 20px;
+}
+.jvbf{
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 30px;
+    color: #FF6D00;
+    height: 100%;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+.jvbf:hover{
+    color: #FFEA00;
+    font-size: 35px;
+}
+.jvbf:active{
+    color: #76FF03;
+}
+.devicon-git-plain {
+    font-size: 20px;
+}
+.bar{
+    color: #B71C1C;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    height: 100%;
+}
+.bar:hover{
+    color: #76FF03;
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+    transition: color .3s linear;
+}
+.bar:active{
+    color: #FF9800;
+    transition: color .3s linear;
+}
+.atual{
+    color: black;
+    background-color: #B71C1C;
+}
+body{
+    background-attachment: fixed;
+    background-image: url("https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg");
+    background-position: center;
+    background-size:cover;
+    background-clip:border-box;
+    margin: 0;
+
+}
+.row{
+    background: #ECEFF1;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    margin: 0;
+    float:none;
+    color: black;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+}
+.row > h4{
+    margin-top: 0;
+}
+.thumbnail{
+    margin-top: 10px;
+    background: #ECEFF1;
+    border: none;
+    filter: grayscale(100%);
+    transition: filter .3s ease-in-out;
+}
+.thumbnail:hover{
+    filter: grayscale(0%);
+}
+.container{
+    padding-top: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.jv{
+    border-radius: 100%;
+    object-position: center;
+    position:relative;
+    left:50%;
+    margin-left: -100px;
+    border-style:solid;
+    border-color: #C0C0C0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px  30px blue;
+    transition: border-radius .3s ease-in-out;
+}
+.jv:hover{
+    border-radius: 5px;
+    transition: border-radius .3s ease-in-out;
+}
+.jv2{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    background: #B71C1C;
+    color: #001010;
+    padding: 1px;
+    margin-top: 20px;
+}
+.more{
+    background-color: #EEEEEE;
+    border: 0px;
+    margin-bottom: 10px;
+}
+.more:hover{
+    box-shadow: none;
+}
+.see{
+    display: none;
+    transition: 1s ease-in-out;
+}
+.see2{
+    display: none;
+}
+.social{
+    display: inline-block;;
+}
+.aviso{
+    margin: 70px;
+    font-size: 20px;
+}
+.drive{
+    margin-bottom: 40px;
+}
+.margem{
+    margin: 20px;
+    filter: none;
+}
