@@ -89,4 +89,42 @@ $(document).ready(function() {
         tin2.addClass('see');
     });
 
+    function verificPos(){
+        var scroll = $(document).scrollTop() + $("#navbar").height();
+        if($("#home").position().top > scroll){
+            $("#home").addClass("select");
+            $("#repositorio").removeClass("select");
+            $("#contato").removeClass("select");
+            $("#extras").removeClass("select");
+        }
+        else if(($("#home").position().top <= scroll) && ($("#repositorio").position().top > scroll)){
+            $("#home").removeClass("select");
+            $("#repositorio").addClass("select");
+            $("#contato").removeClass("select");
+            $("#extras").removeClass("select");
+        }
+        else if(($("#repositorio").position().top <= scroll) && ($("#contato").position().top > scroll)){
+            $("#home").removeClass("select");
+            $("#repositorio").removeClass("select");
+            $("#contato").addClass("select");
+            $("#extras").removeClass("select");
+        }
+        else{
+            $("#home").removeClass("select");
+            $("#repositorio").removeClass("select");
+            $("#contato").removeClass("select");
+            $("#extras").addClass("select");
+        }
+    }
+
+
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 800);
+    });
+
+    $("body").onscroll(verificPos());
+
 });
