@@ -91,29 +91,29 @@ $(document).ready(function() {
 
     function verificPos(){
         var scroll = $(document).scrollTop() + $("#navbar").height();
-        if($("#home").position().top > scroll){
-            $("#home").addClass("select");
-            $("#repositorio").removeClass("select");
-            $("#contato").removeClass("select");
-            $("#extras").removeClass("select");
+        if($("#repositorio").position().top > scroll){
+            $("#hom").addClass("select");
+            $("#repos").removeClass("select");
+            $("#cont").removeClass("select");
+            $("#ext").removeClass("select");
         }
-        else if(($("#home").position().top <= scroll) && ($("#repositorio").position().top > scroll)){
-            $("#home").removeClass("select");
-            $("#repositorio").addClass("select");
-            $("#contato").removeClass("select");
-            $("#extras").removeClass("select");
+        else if(($("#repositorio").position().top <= scroll) && ($("#extras").position().top > scroll)){
+            $("#hom").removeClass("select");
+            $("#repos").addClass("select");
+            $("#cont").removeClass("select");
+            $("#ext").removeClass("select");
         }
-        else if(($("#repositorio").position().top <= scroll) && ($("#contato").position().top > scroll)){
-            $("#home").removeClass("select");
-            $("#repositorio").removeClass("select");
-            $("#contato").addClass("select");
-            $("#extras").removeClass("select");
+        else if(($("#extras").position().top <= scroll) && (scroll !== $(document).height()+ $("#navbar").height())){
+            $("#hom").removeClass("select");
+            $("#repos").removeClass("select");
+            $("#cont").removeClass("select");
+            $("#ext").addClass("select");
         }
         else{
-            $("#home").removeClass("select");
-            $("#repositorio").removeClass("select");
-            $("#contato").removeClass("select");
-            $("#extras").addClass("select");
+            $("#hom").removeClass("select");
+            $("#repos").removeClass("select");
+            $("#cont").addClass("select");
+            $("#ext").removeClass("select");
         }
     }
     $(document).on( 'scroll', function(){

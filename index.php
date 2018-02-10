@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <title>JVBF</title>
     <link REL="SHORTCUT ICON" HREF="imgs/favicon2.png">
+    <link rel="icon" href="imgs/favicon2.png"/>
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Orbitron:700|Pacifico|Righteous" rel="stylesheet">
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <link rel="stylesheet" type="text/css" href="css/MyPage.css">
@@ -13,14 +14,14 @@
 <nav id="navbar">
     <a class="jvbf">JVBF</a>
     <ul class="itens">
-        <li><a class="bar" href="#home">Home</a></li>
-        <li><a href="#repositorio" class="bar">Repositório</a></li>
-        <li><a href="#extras" class="bar">Extras</a></li>
-        <li><a href="#contato" class="bar">Contato</a></li>
+        <li><a class="bar" href="#home"id="hom">Home</a></li>
+        <li><a href="#repositorio" class="bar" id="repos">Repositório</a></li>
+        <li><a href="#extras" class="bar" id="ext">Extras</a></li>
+        <li><a href="#contato" class="bar" id="cont">Contato</a></li>
     </ul>
 </nav>
 <div class="container" id="home">
-    <div class=""><img width="200vw" src="imgs/jv.jpg" class="jv"></div>
+    <div class=""><img width="200vw" src="imgs/jv.jpeg" class="jv"></div>
     <div class="jv2"><h4 class="">João Victor</h4>
         <p class="jv2">18 Anos</p>
         <p class="jv2">Caruaruense</p>
@@ -54,37 +55,30 @@
     <div class="row">
         <h4 class="">Conhecimentos em:</h4>
         <div class="social">
-            <a class="ling">
-                <img src="imgs/C.png" width="150vw" ></a>
+                <img src="imgs/C.png" width="150vw" >
         </div>
         <div class="social">
-            <a class="ling">
-                <img src="imgs/java.png" width="150vw"></a>
+                <img src="imgs/java.png" width="150vw">
         </div>
         <div class="social">
-            <a class="ling">
-                <img src="imgs/JavaScript.png" width="150vw"></a>
+                <img src="imgs/JavaScript.png" width="150vw">
         </div>
         <div class="social">
-            <a class="ling">
-                <img src="imgs/HTML5.png" width="150vw"></a>
+                <img src="imgs/HTML5.png" width="150vw">
         </div>
         <div class="social">
-            <a class="ling">
-                <img src="imgs/css3.png" width="150vw"></a>
+                <img src="imgs/css3.png" width="150vw">
         </div>
         <div class="social">
-            <a class="ling">
-                <img src="imgs/android.png" width="150vw"></a>
+                <img src="imgs/android.png" width="150vw">
         </div>
         <div class="social">
-            <a class="thumbnail">
-                <img src="imgs/gimp.png" width="150vw"></a>
+                <img src="imgs/gimp.png" width="150vw">
         </div>
     </div>
 </div>
 <div class="container" id="repositorio">
-    <div class="jv2"><h4 class="">COMING SOON...</h4>
+    <div class="jv2"><h4 class="">REPOSITÓRIO</h4>
     </div>
     <div class="repositorio">
         <!--<div class="container-fluid">-->
@@ -124,15 +118,15 @@
     </div>
 </div>
 <div class="contatos" id="contato">
-    <h1>Contos</h1>
-    <i class="fab fa-github fa-3x" id="gh"></i>
-    <i class="fab fa-facebook fa-3x"id="fb"></i>
-    <i class="fab fa-telegram fa-3x"id="tg"></i>
-    <i class="fab fa-linkedin fa-3x"id="li"></i>
-    <i class="fab fa-steam fa-3x"id="st"></i>
-    <i class="fas fa-envelope fa-3x"id="env"></i>
-    <i class="fab fa-instagram fa-3x"id="in"></i>
-    <i class="fab fa-youtube fa-3x"id="yt"></i>
+    <h1>Contatos</h1>
+    <a href="https://github.com/jvbfelix"><i class="fab fa-github fa-3x" id="gh"></i></a>
+    <a href="https://www.facebook.com/joaovictor.barrosfelix"><i class="fab fa-facebook fa-3x"id="fb"></i></a>
+    <a href="https://telegram.me/jvbfelix"><i class="fab fa-telegram fa-3x"id="tg"></i></a>
+    <a href="https://www.linkedin.com/in/joao-victor-barros-felix-6b1444142/"><i class="fab fa-linkedin fa-3x"id="li"></i></a>
+    <a href="http://steamcommunity.com/profiles/76561198065218927/"><i class="fab fa-steam fa-3x"id="st"></i></a>
+    <a href="mailto:jvbf@cin.ufpe.br"><i class="fas fa-envelope fa-3x"id="env"></i></a>
+    <a href="https://www.instagram.com/jvbfelix/"><i class="fab fa-instagram fa-3x"id="in"></i></a>
+    <a href="https://www.youtube.com/channel/UCrcEaA2tcye0UArLwn6olmw"><i class="fab fa-youtube fa-3x"id="yt"></i></a>
 </div>
 <div class="footer">
     <p>Copyright© 2018</p>

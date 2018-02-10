@@ -1,6 +1,6 @@
 #navbar{
     border-radius: 0px;
-    box-shadow: 0 .7vh  2vh red;
+    box-shadow: 0 .7vh  2vh #B71C1C;
     display: flex;
     height: 8%;
     position: fixed;
@@ -11,7 +11,7 @@
     justify-content: space-between;
 }
 #navbar:hover{
-    box-shadow: 0 .7vh  2vh blue;
+    box-shadow: 0 .7vh  2vh #1A237E;
 }
 a{
     text-decoration: none;
@@ -27,7 +27,7 @@ a{
 .jvbf{
     font-family: 'Fredericka the Great', cursive;
     font-size: 5vh;
-    color: #FF6D00;
+    color: #B71C1C;
     height: 100%;
     margin-left: 1vw;
     margin-top: 1vh;
@@ -35,26 +35,21 @@ a{
 }
 .jvbf:hover{
     transition: color .3s linear;
-    color: #FFEA00;
+    color: #1A237E;
 }
-.jvbf:active{
-    color: #76FF03;
-}
+
 .bar{
     color: #B71C1C;
     font-family: 'Righteous', cursive;
     font-size: 3vh;
 }
 .bar:hover{
-    color: #76FF03;
-    transition: color .3s linear;
-}
-.bar:active{
-    color: #FF9800;
+    color: #1A237E;
     transition: color .3s linear;
 }
 .select{
     color: #FAFAFA !important;
+    transition: color .3s linear;
 }
 body{
     background-attachment: fixed;
@@ -62,14 +57,13 @@ body{
     background-position: center;
     background-size:cover;
     background-clip:border-box;
-    font-family: 'Righteous', cursive;
+    font-family: 'Orbitron', sans-serif;
     margin: 0;
 
 }
 .row{
     background: #ECEFF1;
     text-align: center;
-    font-family: 'Orbitron', sans-serif;
     font-size: 3vh;
     margin: 0;
     float:none;
@@ -84,7 +78,6 @@ body{
 .repositorio{
     background: #ECEFF1;
     text-align: left;
-    font-family: 'Orbitron', sans-serif;
     font-size: 2.5vh;
     margin: 0;
     float:none;
@@ -121,7 +114,7 @@ body{
     border-style:solid;
     border-color: #C0C0C0;
     background: #FFFFFF;
-    box-shadow: 0 0  30px blue;
+    box-shadow: 0 0  30px #1A237E;
     transition: border-radius .3s ease-in-out;
 }
 .jv:hover{
@@ -129,7 +122,6 @@ body{
     transition: border-radius .3s ease-in-out;
 }
 .jv2{
-    font-family: 'Orbitron', sans-serif;
     text-align: center;
     background: #B71C1C;
     color: #001010;
@@ -216,22 +208,22 @@ svg{
 }
 @keyframes conts {
     0%   {
-        color: gold;
+        color: #B71C1C;
     }
 
-    20%  {
-        color:  #6d84b4;
+    25%  {
+        color:  #1A237E;
     }
-    40%  {
+    50%  {
         color: #000000;
     }
-    60% {
-        color:rgba(146, 208, 80, 1);
+    75% {
+        color:#FAFAFA;
     }
-    80%{
-        color: #E65100;
-    }
+    /*80%{*/
+        /*color: #E65100;*/
+    /*}*/
     100%   {
-        color: gold;
+        color: #B71C1C;
     }
 }
