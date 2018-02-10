@@ -1,14 +1,14 @@
 #navbar{
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: 0 .7vh  2vh #B71C1C;
     display: flex;
-    height: 8%;
     position: fixed;
     width: 100%;
     z-index: 3;
     background-color: #111111;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 #navbar:hover{
     box-shadow: 0 .7vh  2vh #1A237E;
@@ -30,6 +30,7 @@ a{
     color: #B71C1C;
     height: 100%;
     margin-left: 1vw;
+    align-self: center;
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
@@ -52,9 +53,7 @@ a{
     transition: color .3s linear;
 }
 body{
-    background-attachment: fixed;
-    background-image: url("https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg");
-    background-position: center;
+    background: url("https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg") fixed center;
     background-size:cover;
     background-clip:border-box;
     font-family: 'Orbitron', sans-serif;
@@ -65,10 +64,9 @@ body{
     background: #ECEFF1;
     text-align: center;
     font-size: 3vh;
-    margin: 0;
     float:none;
     color: black;
-    margin-bottom: 5vh;
+    margin: 0 0 5vh;
     padding-top: 5%;
     padding-bottom: 2vh;
 }
@@ -110,27 +108,26 @@ body{
     object-position: center;
     position:relative;
     left:50%;
-    margin-left: -100px;
-    border-style:solid;
-    border-color: #C0C0C0;
+    width: 15vw;
+    margin: 2vh 0 4vh -7.5vw;
+    border: solid #C0C0C0;
     background: #FFFFFF;
-    box-shadow: 0 0  30px #1A237E;
+    box-shadow: 0 0  6vh #1A237E;
     transition: border-radius .3s ease-in-out;
 }
 .jv:hover{
-    border-radius: 5px;
+    border-radius: 3%;
     transition: border-radius .3s ease-in-out;
 }
 .jv2{
     text-align: center;
     background: #B71C1C;
     color: #001010;
-    padding: 1px;
-    margin-top: 20px;
+    padding: .5vh;
 }
 .more{
     background-color: #EEEEEE;
-    border: 0px;
+    border: 0;
     margin-bottom: 10px;
 }
 .more:hover{
@@ -147,14 +144,8 @@ body{
     display: inline-block;;
 }
 .aviso{
-    margin-bottom: 2vh;
-    margin-top: 2vh;
-    margin-right: 5vw;
-    margin-left: 5vw;
+    margin: 2vh 5vw;
     font-size: 2.5vh;
-}
-.drive{
-    margin-bottom: 40px;
 }
 
 .footer{
@@ -175,36 +166,63 @@ body{
     text-align: center;
 }
 svg{
-    margin-right: 0.2vw;
-    margin-left: 0.2vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    margin: 1vh 0.2vw;
     color: #E65100;
     animation-name: conts;
     animation-duration: 5s;
     animation-iteration-count:infinite;
 }
+#xtudo{
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    align-self: center;
+    display:none;
+    margin: 0 1vw 0 0;
+}
 
 #fb{
     animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -o-animation-delay: .2s;
+    -webkit-animation-delay: .2s;
 }
 #tg{
     animation-delay: .4s;
+    -moz-animation-delay: .4s;
+    -o-animation-delay: .4s;
+    -webkit-animation-delay: .4s;
 }
 #li{
     animation-delay: .6s;
+    -moz-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    -webkit-animation-delay: .6s;
 }
 #st{
     animation-delay: .8s;
+    -moz-animation-delay: .8s;
+    -o-animation-delay: .8s;
+    -webkit-animation-delay: .8s;
 }
 #env{
     animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 #in{
     animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
 }
 #yt{
     animation-delay: 1.4s;
+    -moz-animation-delay: 1.4s;
+    -o-animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
 }
 @keyframes conts {
     0%   {
@@ -220,10 +238,57 @@ svg{
     75% {
         color:#FAFAFA;
     }
-    /*80%{*/
-        /*color: #E65100;*/
-    /*}*/
     100%   {
         color: #B71C1C;
     }
+}
+@media (max-width: 100vh) {
+
+    #navbar{
+        box-shadow: 0 .7vw  2vw #B71C1C;
+    }
+    #navbar:hover{
+        box-shadow: 0 .7vw  2vw #1A237E;
+    }
+    .jvbf{
+        font-size: 5vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    .bar{
+        font-size: 3vw;
+    }
+    .row{
+        font-size: 3vw;
+        margin: 0 0 5vw;
+        padding-bottom: 2vw;
+    }
+    .repositorio{
+        font-size: 2.5vw;
+        padding-bottom: 2vw;
+    }
+    .repositorio > a{
+        margin-left: 2vw;
+        margin-bottom: 2vw;
+    }
+    .social{
+        margin-top: 1vw;
+    }
+    .itens{
+        flex-direction: column;
+        width: 100%;
+    }
+    #xtudo{
+        display: block;
+    }
+    .disp{
+        display: none;
+    }
+    .aviso{
+        font-size: 2.5vw;
+    }
+    .contatos{
+        font-size: 3vw;
+    }
+
 }
