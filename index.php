@@ -12,8 +12,8 @@
 <body>
 <nav id="navbar">
     <a class="jvbf">JVBF</a>
-    <i class="fas fa-bars fa-2x" id="xtudo"></i>
-    <ul class="itens disp">
+    <i class="fas fa-bars fa-3x" id="xtudo"></i>
+    <ul class="itens disp" id="itens">
         <li><a class="bar" href="#home"id="hom">Home</a></li>
         <li><a href="#repositorio" class="bar" id="repos">Repositório</a></li>
         <li><a href="#extras" class="bar" id="ext">Extras</a></li>
@@ -23,13 +23,13 @@
 <div class="container" id="home">
     <div class=""><img src="imgs/jv.jpeg" class="jv"></div>
     <div class="jv2"><h4 class="">João Victor</h4>
-        <p class="jv2">18 Anos</p>
-        <p class="jv2">Caruaruense</p>
-        <p class="jv2">3° Período de Engenharia da Computação</p>
-        <p class="jv2">Monitor de Matemática Discreta</p>
-        <p class="jv2">Desenvolvedor no CITI  (Centro Integrado de Tecnologia da Informação)</p>
-        <p class="jv2">Aberto a novos projetos</p>
-        <p class="jv2">Interesses em tudo que venha agregar</p>
+        <p>18 Anos</p>
+        <p>Caruaruense</p>
+        <p>3° Período de Engenharia da Computação</p>
+        <p>Monitor de Matemática Discreta</p>
+        <p>Desenvolvedor no CITI  (Centro Integrado de Tecnologia da Informação)</p>
+        <p>Aberto a novos projetos</p>
+        <p>Interesses em tudo que venha agregar</p>
 
 
         <!--<button class="more" id="botao">Ver mais...</button>-->

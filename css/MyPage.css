@@ -167,7 +167,7 @@ body{
 }
 svg{
     margin: 1vh 0.2vw;
-    color: #E65100;
+    color: #B71C1C;
     animation-name: conts;
     animation-duration: 5s;
     animation-iteration-count:infinite;
@@ -251,25 +251,42 @@ svg{
         box-shadow: 0 .7vw  2vw #1A237E;
     }
     .jvbf{
-        font-size: 5vw;
+        font-size: 7vw;
         margin-top: 1vw;
         margin-bottom: 1vw;
+    }
+    .jv{
+        border-radius: 100%;
+        left:50%;
+        width: 15vh;
+        margin: 8vw 0 4vw -7.5vh;
+        box-shadow: 0 0  6vw #1A237E;
+    }
+    h4{
+        font-size: 1.2vw;
+    }
+    p{
+        font-size: 1vw;
     }
     .bar{
         font-size: 3vw;
     }
     .row{
-        font-size: 3vw;
+        font-size: 2vw;
         margin: 0 0 5vw;
         padding-bottom: 2vw;
     }
+    .row > h1{
+        font-size: 2vw;
+    }
+
     .repositorio{
-        font-size: 2.5vw;
+        font-size: 1.1vw;
         padding-bottom: 2vw;
     }
     .repositorio > a{
         margin-left: 2vw;
-        margin-bottom: 2vw;
+        margin-bottom: 2vh;
     }
     .social{
         margin-top: 1vw;
@@ -280,15 +297,20 @@ svg{
     }
     #xtudo{
         display: block;
+        margin-right: 3vw;
     }
     .disp{
         display: none;
     }
     .aviso{
-        font-size: 2.5vw;
+        font-size: 1.2vw;
     }
     .contatos{
-        font-size: 3vw;
+        font-size: 4.5vw;
     }
+    .contatos > h1{
+        font-size: 5vw;
+    }
+    
 
 }
