@@ -12,8 +12,9 @@
 <body>
 <nav id="navbar">
     <a class="jvbf">JVBF</a>
-    <i class="fas fa-bars fa-3x" id="xtudo"></i>
-    <ul class="itens disp" id="itens">
+    <div id="butt"><i class="fas fa-bars fa-3x" id="xtudo"></i></div>
+
+    <ul class="itens" id="itens">
         <li><a class="bar" href="#home"id="hom">Home</a></li>
         <li><a href="#repositorio" class="bar" id="repos">Repositório</a></li>
         <li><a href="#extras" class="bar" id="ext">Extras</a></li>
@@ -83,7 +84,7 @@
     <div class="jv2"><h4 class="">CRÉDITOS</h4>
     </div>
     <div class="row">
-        <p class="aviso">E aí jovem gafanhoto, tá querendo fazer um public pra chamr de seu, mas não manja nada de Web? Se liga aí nos contatos que eu posso te ajudar, e se você estiver realmente interessado em trabalhar mais com isso, indico que procure ver quando será o próximo processo seletivo para o <a href="http://citi.org.br/">Citi</a>, lá você poderá  ter a experiência de lidar com projetos reais e impactar cada vez mais a sociedade </p>
+        <p class="aviso">E aí jovem gafanhoto, tá querendo fazer um public pra chamar de seu, mas não manja nada de Web? Se liga aí nos contatos que eu posso te ajudar, e se você estiver realmente interessado em trabalhar mais com isso, indico que procure ver quando será o próximo processo seletivo para o <a href="http://citi.org.br/">Citi</a>, lá você poderá  ter a experiência de lidar com projetos reais e impactar cada vez mais a sociedade </p>
         <h1>Projetos:</h1>
         <h4>N-Back (Alpha 1.0.0):</h4>
         <a href="http://cin.ufpe.br/~jvbf/N-back">

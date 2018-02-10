@@ -172,12 +172,14 @@ svg{
     animation-duration: 5s;
     animation-iteration-count:infinite;
 }
+#butt{
+    align-self: center;
+}
 #xtudo{
     animation-play-state: paused;
     -webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
-    align-self: center;
     display:none;
     margin: 0 1vw 0 0;
 }
@@ -299,9 +301,6 @@ svg{
         display: block;
         margin-right: 3vw;
     }
-    .disp{
-        display: none;
-    }
     .aviso{
         font-size: 1.2vw;
     }
@@ -311,6 +310,6 @@ svg{
     .contatos > h1{
         font-size: 5vw;
     }
-    
+
 
 }

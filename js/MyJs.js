@@ -2,7 +2,13 @@ $(document).ready(function() {
     // var more=$("#more");
     // var botao=$("#botao");
     // var estado=0;
-    var xt = $("#xtudo");
+    var xt=$("#butt");
+    var menu = $("#itens");
+    var resp = false;
+    var wid = $(window).width();
+    var hei = $(window).height();
+    var widAn = wid;
+    var heiAn = hei;
     // console.log("ok");
     // botao.click(function () {
     //     console.log("ok2");
@@ -17,9 +23,9 @@ $(document).ready(function() {
     //     }
     // });
 
-    xt.on('click',function () {
+    xt.click(function () {
         console.log("click");
-        $("#itens").toggleClass("disp");
+        menu.slideToggle("slow");
     });
 
     function verificPos(){
@@ -52,12 +58,44 @@ $(document).ready(function() {
     $(document).on( 'scroll', function(){
         verificPos();
     });
-
+    verificPos();
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 800);
+    });
+
+    function verificaRes(){
+        if(wid >= hei){
+            menu.show();
+            console.log("show");
+            resp = false;
+        }
+        else{
+            menu.hide();
+            console.log("hide");
+            resp = true;
+        }
+    }
+
+    verificaRes();
+    setInterval(function(){
+        wid = $(window).width();
+        hei = $(window).height();
+        console.log("wid"+wid);
+        console.log("hei"+hei);
+        if((wid!=widAn)||(hei!=heiAn)){
+            verificaRes();
+            widAn=wid;
+            heiAn=hei;
+        }
+    },10);
+
+    menu.click(function () {
+        if(resp){
+            menu.slideToggle("fast");
+        }
     });
 
 
