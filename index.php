@@ -6,6 +6,8 @@
     <link rel="icon" href="imgs/favicon2.png"/>
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Orbitron:700|Pacifico|Righteous" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/MyPage.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 </head>
@@ -68,12 +70,41 @@
         <?php
         $path = "repositorio/";
         $diretorio = dir($path);
-
 //        echo "Lista de Arquivos do diretório '<strong>".$path."</strong>':<br />";
         while($arquivo = $diretorio -> read()){
             if($arquivo == "." || $arquivo == "..")
                 continue;
-            echo "<a href='".$path.$arquivo."'>".$arquivo."</a><br />";
+            if(strrchr($arquivo, '.')===".java"){
+                echo "<div class=\"repitem\"><i class=\"devicon-java-plain lgicon colored\"></i>";
+            }
+            elseif(strrchr($arquivo, '.')===".c"){
+                echo "<div class=\"repitem\"><i class=\"devicon-c-plain lgicon colored\"></i>";
+            }
+            elseif(strrchr($arquivo, '.')===".cpp"){
+                echo "<div class=\"repitem\"><i class=\"devicon-cplusplus-plain lgicon colored\"></i>";
+            }
+            elseif(strrchr($arquivo, '.')===".js"){
+                echo "<div class=\"repitem\"><i class=\"devicon-javascript-plain lgicon colored\"></i>";
+            }
+            elseif(strrchr($arquivo, '.')===".css"){
+                echo "<div class=\"repitem\"><i class=\"devicon-css3-plain lgicon colored\"></i>";
+            }
+            elseif(strrchr($arquivo, '.')===".html"){
+                echo "<div class=\"repitem\"><i class=\"devicon-html5-plain lgicon colored\"></i>";
+            }
+            elseif(strrchr($arquivo, '.')===".php"){
+                echo "<div class=\"repitem\"><i class=\"devicon-php-plain lgicon colored\"></i>";
+            }
+            elseif(strrchr($arquivo, '.')===".py"){
+                echo "<div class=\"repitem\"><i class=\"devicon-python-plain lgicon colored\"></i>";
+            }
+            elseif(strrchr($arquivo, '.')===".apk"){
+                echo "<div class=\"repitem\"><i class=\"devicon-android-plain lgicon colored\"></i>";
+            }
+            else{
+                echo"<div class=\"repitem\"><i class=\"devicon-google-plain lgicon colored\">    </i>";
+            }
+            echo "<a href='".$path.$arquivo."'>".$arquivo."</a></div><br />";
         }
         $diretorio -> close();
         ?>
