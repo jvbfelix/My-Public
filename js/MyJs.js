@@ -116,10 +116,13 @@ $(document).ready(function() {
             $("#extras").addClass("select");
         }
     }
-
+    $(document).on( 'scroll', function(){
+        verificPos();
+    });
 
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
+        verificPos();
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 800);
