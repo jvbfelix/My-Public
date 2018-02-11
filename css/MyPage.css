@@ -93,6 +93,7 @@ body{
     position: relative;
     left: 44%;
     width: 10%;
+    font-size: 2vh;
     font-family: 'Orbitron', sans-serif;
     margin:1%;
 }
@@ -303,6 +304,11 @@ svg{
     }
     .row > h1{
         font-size: 2vw;
+    }
+    #repButt{
+        font-size: 2.6vw;
+        left: 39%;
+        width: 20%;
     }
 
     .repositorio{
