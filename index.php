@@ -70,10 +70,16 @@
         <?php
         $path = "repositorio/";
         $diretorio = dir($path);
-//        echo "Lista de Arquivos do diretório '<strong>".$path."</strong>':<br />";
+        $cont=0;
         while($arquivo = $diretorio -> read()){
             if($arquivo == "." || $arquivo == "..")
                 continue;
+
+            $cont++;
+            if($cont==5){
+                echo"<div id=\"restante\" class=\"none\">";
+            }
+
             if(strrchr($arquivo, '.')===".java"){
                 echo "<div class=\"repitem\"><i class=\"devicon-java-plain lgicon colored\"></i>";
             }
@@ -102,9 +108,12 @@
                 echo "<div class=\"repitem\"><i class=\"devicon-android-plain lgicon colored\"></i>";
             }
             else{
-                echo"<div class=\"repitem\"><i class=\"devicon-google-plain lgicon colored\">    </i>";
+                echo"<div class=\"repitem\"><i class=\"devicon-google-plain lgicon colored\"></i>";
             }
-            echo "<a href='".$path.$arquivo."'>".$arquivo."</a></div><br />";
+            echo "<a href='".$path.$arquivo."'>".$arquivo."</a></div>";
+        }
+        if($cont>=5){
+            echo"</div> <button id=\"repButt\">Ver Mais...</button> ";
         }
         $diretorio -> close();
         ?>

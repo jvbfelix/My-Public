@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    // var more=$("#more");
-    // var botao=$("#botao");
-    // var estado=0;
+    var more=$("#restante");
+    var botao=$("#repButt");
+    var estado=true;
     var xt=$("#butt");
     var menu = $("#itens");
     var resp = false;
@@ -9,19 +9,18 @@ $(document).ready(function() {
     var hei = $(window).height();
     var widAn = wid;
     var heiAn = hei;
-    // console.log("ok");
-    // botao.click(function () {
-    //     console.log("ok2");
-    //     more.toggle("see2");
-    //     if(estado==0){
-    //         botao.text("Ver Menos...");
-    //         estado=1;
-    //     }
-    //     else{
-    //         botao.text("Ver Mais...");
-    //         estado=0;
-    //     }
-    // });
+    console.log("ok");
+    botao.click(function () {
+        more.toggle("see2");
+        if(estado){
+            botao.text("Ver Menos...");
+            estado=false;
+        }
+        else{
+            botao.text("Ver Mais...");
+            estado=true;
+        }
+    });
 
     xt.click(function () {
         console.log("click");

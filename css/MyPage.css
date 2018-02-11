@@ -52,6 +52,9 @@ a{
     color: #FAFAFA !important;
     transition: color .3s linear;
 }
+.none{
+    display: none;
+}
 body{
     background: url("https://static.pexels.com/photos/50711/board-electronics-computer-data-processing-50711.jpeg") fixed center;
     background-size:cover;
@@ -77,14 +80,21 @@ body{
     background: #ECEFF1;
     text-align: left;
     font-size: 2.5vh;
-    margin: 0;
+    margin: 0;=
     float:none;
-    padding-top: 5%;
+    padding-top: 1%;
     padding-bottom: 2vh;
 }
 .repositorio > a{
     margin-left: 2vw;
     margin-bottom: 2vh;
+}
+#repButt{
+    position: relative;
+    left: 44%;
+    width: 10%;
+    font-family: 'Orbitron', sans-serif;
+    margin:1%;
 }
 
 .social{
@@ -190,6 +200,7 @@ svg{
 }
 .repitem{
     display: flex;
+    margin-top: 2%;
     align-items: center;
 }
 
@@ -295,7 +306,7 @@ svg{
     }
 
     .repositorio{
-        font-size: 1.1vw;
+        font-size: 2vw;
         padding-bottom: 2vw;
     }
     .repositorio > a{
