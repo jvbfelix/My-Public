@@ -29,6 +29,8 @@ $(document).ready(function() {
 
     function verificPos(){
         var scroll = $(document).scrollTop() + $("#navbar").height();
+        var scrollHeight = $(document).height();
+        var scrollPosition = $(window).height() + $(window).scrollTop();
         if($("#repositorio").position().top > scroll){
             $("#hom").addClass("select");
             $("#repos").removeClass("select");
@@ -41,7 +43,7 @@ $(document).ready(function() {
             $("#cont").removeClass("select");
             $("#ext").removeClass("select");
         }
-        else if(($("#extras").position().top <= scroll) && (scroll < $("body").height())){
+        else if(($("#extras").position().top <= scroll) && ((scrollHeight - scrollPosition) / scrollHeight !== 0)){//($("#extras").position().top <= scroll) && ($(document).height() - ($("#contato").height() + $(".footer").height())/2) > scroll + $(window).height()
             $("#hom").removeClass("select");
             $("#repos").removeClass("select");
             $("#cont").removeClass("select");
