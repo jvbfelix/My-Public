@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title !important>JVBF</title>
+    <title>JVBF</title>
     <link REL="SHORTCUT ICON" HREF="imgs/favicon2.png">
     <link rel="shortcut icon" type="image/png" href="imgs/favicon2.png"/>
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Orbitron:700|Pacifico|Righteous" rel="stylesheet">
